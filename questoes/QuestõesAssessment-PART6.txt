@@ -1,0 +1,16 @@
+1) Quando é recomendando a criação de um site separado para mobile? Seria  este o caso deste site da GK Fashion?
+
+RESPOSTA: Nos dias atuais o acesso à Web através de dispositivos móveis é maior que através de desktops ou notebooks, 
+	  entrar em um site pelo celular e se deparar com os layouts tradicionais para desktops é uma experiência frustrante,	  
+	  esse é só um dos motivos para a criação de um site separado para mobile, também existe a questão da performance, devido
+	  a baixa conexão apresentadas no Brasil, por mais que existam redes 3G, 4G e etc, é uma tecnologia inconstante no País, 
+	  devido as operadoras que ditam as conexões.
+
+	  Não seria o caso da GK Fashion devido ser um site pequeno e com poucas informações.
+
+
+
+2) No caso de um CSS específico para print, como ele deve ser inserido?
+
+RESPOSTA: Uma página de estilo CSS deve ser criada e deve ser inserido um link para cada pagina html.
+	  Exemplo : <link rel="stylesheet" type="text/css" href="/print.css" media="print"/>.

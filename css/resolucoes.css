@@ -1,0 +1,45 @@
+@media (max-width:480px) {
+.container {
+  width: 100%;
+}
+.menu-principal li {
+  margin: 15px;
+  background: #008B8B;
+  display: block;
+}
+.menu-principal a {
+  color: white;
+}
+.menu-principal {
+  position: relative;
+  bottom: 10px;
+  right: 10px;
+}
+.novidades, .mais-vendidos {
+  float:none;
+  width:100%;
+}
+#img-destaque img {
+  width: 480px;
+}
+.busca, .menu-departamentos {
+  width: 100%;
+}
+.busca input[type="search"] {
+  width: 94%;
+}
+#centro-distribuicao img {
+  width: 400px;
+}
+#centro-distribuicao {
+  margin: 0px;
+}
+}
+@media (max-width:320px) {
+#img-destaque img {
+  width: 320px;
+}
+#centro-distribuicao img {
+  width: 320px;
+}
+}

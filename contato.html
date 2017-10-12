@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Antonio Carlos">
+    <meta name="viewport" content="device-width, initial-scale=1">
+    <meta http-equiv= "expires" content="0">
+    <meta name="keywords" content="Infnet, assessment, html, css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/resolucoes.css">
+    <link rel="stylesheet" type="text/css" href="css/tablet.css" />
+	  <link rel="stylesheet" type="text/css" href="css/mobile.css" />
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+
+    <title>Contato - GK Fashion</title>
+    <!--<! - [se lt IE 9]>
+    <script src = "bower_components / html5shiv / dist / html5shiv.js"> </ script>
+  <! [Endif] ->-->
+  </head>
+  <body>
+    <div class="container">
+
+      <!-- ********** CABEÇALHO ********** -->
+
+      <header>
+        <h1>A GK Fashion</h1>
+        <p class="sacola">Nenhum item na sacola de compras</p>
+        <nav class="menu-principal">
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="#">Sua conta</a></li>
+            <li><a href="#">Lista de Desejos</a></li>
+            <li><a href="cartao_fidelidade.html">Cartão Fidelidade</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main role="main">
+        <section class="contato">
+        <h2> Entre em contato</h2>
+
+          <!-- ********** FORMULÁRIO ********** -->
+
+      <form>
+
+          <label>Nome completo</label>
+          <input type="text" required="required" name="nome" pattern="[A-z\s]+$" placeholder="Digite seu nome."/>
+
+          <label>Email: </label>
+          <input type="email" required="required" class="input-text" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Digite seu email."/>
+
+          <label>Motivo</label>
+            <select id="motivo" name="motivo">
+              <option value="selecioneopcao">---Selecione uma opção---</option>
+              <option value="sugestao">Sugestão</option>
+              <option value="critica">Critíca</option>
+              <option value="elogio">Elogio</option>
+              <option value="outros">Outros</option>
+            </select>
+
+          <label>Comentários</label>
+          <textarea name="message" rows="10" cols="30" placeholder="Digite seu comentário."></textarea><br>
+
+          <input type="submit" value="Enviar">
+      </form>
+    </section>
+        </main>
+
+        <!-- ********** RODAPÉ ********** -->
+
+        <footer>
+          <div class="caixa-footer">
+            <img src="imagem/logo_rodape.png" alt="Logo da empresa GK" title="Logo da empresa GK Fashion, todos os direitos reservados.">
+            <ul class="social">
+              <li><a href="http://www.facebook.com/gkfashion" target="_blank">Facebook</a></li>
+              <li><a href="http://www.twitter.com/gkfashion" target="_blank">Twitter</a></li>
+              <li><a href="http://plus.google.com/gkfashion" target="_blank">Google+</a></li>
+            </ul>
+
+            <p>&copy; Copyright GK Fashion</p>
+
+          </div>
+        </footer>
+      </div>
+    </body>
+  </html>

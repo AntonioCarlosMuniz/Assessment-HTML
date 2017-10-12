@@ -1,0 +1,115 @@
+1) O elemento audio permite como elemento-filho o elemento source. Quais são  os atributos que o source permite e qual conteúdo eles suportam? 
+Quais os  outros atributos do elemento audio e quando devem ser utilizados? 
+
+RESPOSTA: O elemento source é utilizado para especificar múltiplos recursos de mídia de elementos audio e video em HTML5. É um elemento vazio.
+	  Ele permite incluir vários formatos como tipos de alternativa caso o navegador do usuário não seja compatível com um deles. 
+	  Outros atributos são o autoplay, que possiblita que o audio toque sem que o usuario seja solicitado. O preload, onde o autor indica ao
+	  browser como vai ser reproduzido de acordo com o que o autor achar melhor.	  
+
+
+2) O elemento video permite como elemento-filho o elemento source. Quais são  os atributos que o source permite e qual conteúdo eles suportam? 
+Quais os  outros atributos do elemento video e quando devem ser utilizados? 
+
+RESPOSTA: Suporta basicamente os mesmos atributos e funções do áudio.
+
+
+
+3) No caso do canvas, HTML 5 nunca, em momento algum, fez qualquer  animação. Isso porquê o HTML 5 é uma simples linguagem de marcação. 
+Dessa  forma, o que é necessário para criar animações com HTML5? O que são APIs do  HTML5?
+
+RESPOSTA: Canvas é um elemento da HTML5 destinado a delimitar uma área para renderização dinâmica de gráficos. 
+	  Todo o trabalho de criação e animação é realizado atráves de linguagens de programação dinâmica (usualmente Javascript) e a 
+	  utilização de APIs é um conjunto de funcionalidades que não estão presentes em HTML, normalmente são escritas em Javascript e são 
+	  importadas para os projetos.
+
+
+4) Como o CSS3 pode ser aplicado na aparência da multimídia HTML5.   Demonstre com um exemplo.
+
+RESPOSTA:
+
+
+  01 <!doctype html>
+  02 <html lang="pt-br">
+  03 <head>
+  04     <meta charset="utf-8" />
+  05     <title>jPlayer Tutorial</title>
+  06  
+  07 </head>
+  08 <body>
+  09     <div class="top-bar">
+  10         <div class="container">
+  11             <div class="player-controls">
+  12                 <span class="player-prev">Prev</span>
+  13                 <span class="player-play">Play</span>
+  14                 <span class="player-pause">Pause</span>
+  15                 <span class="player-stop">Stop</span>
+  16                 <span class="player-next">Next</span>
+  17             </div>
+  18             <div class="player"></div>
+  19             <div class="player-timeline">
+  20                 <div class="player-timeline-control"></div>
+  21             </div>
+  22             <div class="player-display">
+  23                 Playing: <span class="player-current-track"></span>
+  24             </div>
+  25         </div>
+  26     </div>
+  27 </body>
+  28 </html>
+
+------------------CSS------------------------
+
+  01 .container {
+  02     margin: auto;
+  03     width: 960px;
+  04 }
+  05 .top-bar{
+  06     width: 100%;
+  07     height: 30px;
+  08     background: #141414;
+  09     color: #888;
+  10     line-height: 30px;
+  11 }
+  12 .top-bar .player-controls {
+  13     float: left;
+  14 }
+  15 .top-bar .player-controls span{
+  16     cursor: pointer;
+  17     padding: 0 5px;
+  18     -webkit-transition: all linear 0.2s;
+  19 }
+  20 .top-bar .player-controls span:hover {
+  21     color: #EEE;
+  22 }
+  23 .top-bar .player-display {
+  24     float: left;
+  25     float: right;
+  26     margin-left: 50px;
+  27 }
+  28 .top-bar .player-display .player-current-track {
+  29     color: white;
+  30 }
+  31 .top-bar .player {
+  32     float: left;
+  33 }
+  34 .top-bar .player-timeline {
+  35     float: left;
+  36     max-width: 200px;
+  37     width: 200px;
+  38     height: 4px;
+  39     margin-top: 13px;
+  40     background: #555;
+  41     margin-left: 20px;
+  42 }
+  43 .top-bar .player-timeline-control {
+  44     height: 4px;
+  45     background: #999;
+  46 }
+
+
+----------------- IMPORTAÇÃO DO ARQUIVO--------------
+
+<link rel="stylesheet" href="css/default.css" />
+
+
+EXEMPLO RETIRADO DO SITE : http://www.devmedia.com.br/html5-audio-tag-crie-um-player-de-audio-com-html5/31039
